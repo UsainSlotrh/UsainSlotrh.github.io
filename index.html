@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Little Mechanic</title>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="Script.js"></script>
+    <link rel=stylesheet type=text/css href=css.css>
+</head>
+<body>
+<h1 id="title">Little Mechanic</h1>
+
+<div id="saveload">
+    <a href="javascript:save();" class="button" id="save">Save</a>
+    <a href="javascript:load();" class="button" id="load">Load</a>
+</div>
+<br>
+<br>
+<br>
+<div id="tabs">
+<a href="javascript:changeTab1();" class="button" id="selectTab1">Tab 1</a>
+<a href="javascript:changeTab2();" class="button" id="selectTab2">Tab 2</a>
+</div>
+<!--TAB 1 BEGIN-->
+<div id="tab1">
+    <div class="invisiText" id="textbot"></div>
+    <!--Buttons that help you collect-->
+    <div id="placementCollectors">
+        <h1>Collect:</h1>
+        <a href="javascript:getPart();" class="button" id="collect">Parts</a><a href="javascript:getKnowledge();"
+                                                                                class="button" id="teach">Teach</a>
+    </div>
+
+    <!--Shows resources-->
+    <div id="placementResources">
+        <h1>Resources:</h1>
+
+        <p class="resources" id="Parts"></p>
+
+        <p class="productivity" id="prodParts"></p>
+
+        <p class="resources" id="Knowledge"></p>
+
+        <p class="productivity" id="prodKnowledge"></p>
+
+        <p class="resources" id="ToyRobots"></p>
+
+        <p class="resources" id="MechaCockroach"></p>
+
+        <p class="resources" id="TeacherBots"></p>
+    </div>
+
+    <!--Shows your inventory-->
+    <div id="placementInventory">
+        <h1>Inventory:</h1>
+
+        <div class="ghostInventory">
+            <p class="resources" id="Wrench"></p>
+
+            <p class="resources" id="Microchip"></p>
+        </div>
+    </div>
+
+    <!--The shop where you buy things-->
+    <div id="placementShop">
+        <h1>Shop:</h1>
+        <a href="javascript:buyWrench();" class="button" id="wrenchCost"><span>Cost: 5 Parts</span>Buy Wrench</a>
+        <a href="javascript:buyMicrochip();" class="button" id="microchipCost"><span>Cost: 300 Parts (This makes the robot self learning)</span>
+            Buy Microchip</a>
+    </div>
+
+
+    <!--The workshop where you make things-->
+    <div id="placementWorkshop">
+        <h1>Workshop:</h1>
+        <a href="javascript:buyToyRobot();" class="button"
+           id="toyRobot"><span id="desctoy">Cost: 10 Parts</span>Make Toy Robot</a>
+        <a href="javascript:buyTeacherBot();" class="button"
+           id="teacherBot"><span id="descteacher">Cost: 10 Parts</span>Make Teacher Robot</a>
+        <a href="javascript:fixToyRobot();" class="button"
+           id="fixRobot"><span>Cost: 200 Parts</span>Fix Robot</a>
+        <a href="javascript:fixToyRobot2();" class="button"
+           id="fixRobot2"><span>Cost: 20% of your parts</span>Fix TOYRO-BOT</a>
+        <a href="javascript:installJetpacks();" class="button"
+           id="instJetpacks"><span>Cost: 1000 Parts (Make your Toy Robots faster!)</span>Install Jetpacks</a>
+        <a href="javascript:installEyeglasses();" class="button"
+           id="instEyeglasses"><span>Cost: 1000 Parts (Make your teachers magically smarter!)</span>Install
+            Eyeglasses</a>
+        <a href="javascript:buyMechaCockroach();" class="button"
+           id="mechaCockroach"><span id="desccockroach">Cost: 100 Parts</span>Make Mecha Cockroach</a>
+    </div>
+
+    <!--Skills toyro will learn-->
+    <div id="placementSkills">
+        <h1>Skills:</h1>
+
+        <a href="javascript:learnLanguage();"
+           class="button"
+           id="teachLanguage"><span>Cost: 20 Knowledge</span>Teach Language</a>
+        <a href="javascript:learnEngineering();"
+           class="button"
+           id="teachEngineering"><span>Cost: 500 Knowledge</span>Teach Engineering</a>
+        <a href="javascript:learnKungFu();"
+           class="button"
+           id="teachKungFu"><span>Cost: 1000 Knowledge</span>Teach Kung-Fu</a>
+    </div>
+
+    <!--Skills toyro has learned-->
+    <div id="placementLearned">
+        <h1>Skills learned:</h1>
+
+        <p class="resources" id="Language"></p>
+
+        <p class="resources" id="Engineering"></p>
+
+        <p class="resources" id="Kung-Fu"></p>
+    </div>
+    <br>
+</div>
+<!--TAB 1 END-->
+<!--TAB 2 BEGIN-->
+<div id="tab2">
+    <div id="PreBattlescreen">
+        <a href="javascript:startBattleTest();" class="button" id="startBattle">Fight next enemy<span>You can't save or load the game once in battle!(Game saves after Battle!)</span></a>
+
+        <div id="placementStats">
+            <h1>TOYRO-BOT STATS:</h1>
+
+            <p id="speed"></p>
+
+            <p id="damage"></p>
+
+            <p id="health"></p>
+        </div>
+    </div>
+
+    <div id="Battlescreen">
+        <div id="TOYRO">
+            <p>TOYRO-BOT:</p>
+
+            <p id="TOYROHEALTH"></p>
+            <a href="javascript:attackENEMY();" class="button" id="attack">Fight!</a>
+        </div>
+        <div id="ENEMY">
+            <p id="ENEMYNAME"></p>
+
+            <p id="ENEMYHEALTH"></p>
+        </div>
+    </div>
+</div>
+<!--TAB 2 END-->
+</body>
+</html>
