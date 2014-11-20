@@ -425,6 +425,7 @@ function enhancePower() {
     if (Parts < enhancePC) {
         alert("Not enough Parts")
     } else {
+        Parts -= enhancePC;
         enhancePM++;
         TOYROdamage += enhancePB * enhancePM;
         enhancePC += Math.round(enhancePC + (enhancePC / 3));
@@ -437,6 +438,7 @@ function enhanceCore() {
     if (Parts < enhanceCC) {
         alert("Not enough Parts")
     } else {
+        Parts -= enhanceCC;
         enhanceCM++;
         TOYROhealthmax += enhanceCB * enhanceCM;
         TOYROhealthcurrent = TOYROhealthmax;
