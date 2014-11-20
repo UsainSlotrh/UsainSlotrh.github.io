@@ -17,9 +17,10 @@
 <br>
 <br>
 <br>
+
 <div id="tabs">
-<a href="javascript:changeTab1();" class="button" id="selectTab1">Tab 1</a>
-<a href="javascript:changeTab2();" class="button" id="selectTab2">Tab 2</a>
+    <a href="javascript:changeTab1();" class="button" id="selectTab1">Tab 1</a>
+    <a href="javascript:changeTab2();" class="button" id="selectTab2">Tab 2</a>
 </div>
 <!--TAB 1 BEGIN-->
 <div id="tab1">
@@ -39,15 +40,25 @@
 
         <p class="productivity" id="prodParts"></p>
 
+        <p class="resources" id="ToyRobots"></p>
+
+        <p class="productivity" id="prodTY"></p>
+
+        <p class="resources" id="MechaCockroach"></p>
+
+        <p class="productivity" id="prodMC"></p>
+
         <p class="resources" id="Knowledge"></p>
 
         <p class="productivity" id="prodKnowledge"></p>
 
-        <p class="resources" id="ToyRobots"></p>
-
-        <p class="resources" id="MechaCockroach"></p>
-
         <p class="resources" id="TeacherBots"></p>
+
+        <p class="productivity" id="prodTB"></p>
+
+        <p class="resources" id="CyborgDolphin"></p>
+
+        <p class="productivity" id="prodCD"></p>
     </div>
 
     <!--Shows your inventory-->
@@ -88,6 +99,8 @@
             Eyeglasses</a>
         <a href="javascript:buyMechaCockroach();" class="button"
            id="mechaCockroach"><span id="desccockroach">Cost: 100 Parts</span>Make Mecha Cockroach</a>
+        <a href="javascript:buyDolphinCyborg();" class="button"
+           id="cyborgDolphin"><span id="descdolphin">Cost: 100 Parts</span>Make Cyborg Dolphin</a>
     </div>
 
     <!--Skills toyro will learn-->
@@ -121,8 +134,17 @@
 <!--TAB 2 BEGIN-->
 <div id="tab2">
     <div id="PreBattlescreen">
-        <a href="javascript:startBattleTest();" class="button" id="startBattle">Fight next enemy<span>You can't save or load the game once in battle!(Game saves after Battle!)</span></a>
-
+        <div id="placementBattle">
+          <h1>Battle:</h1>
+            <a href="javascript:startBattleTest();" class="button" id="startBattle">Fight next enemy<span>You can't save or load the game once in battle!(Game saves after Battle!)</span></a>
+        </div>
+        <div id="placementEnhance">
+            <h1>ENHANCE:</h1>
+            <a href="javascript:enhancePower();" class="button"
+               id="enhancePower"><span id="descpower">Cost: 100 Parts</span>Enhance Power</a>
+            <a href="javascript:enhanceCore();" class="button"
+               id="enhanceCore"><span id="desccore">Cost: 100 Parts</span>Enhance Core</a>
+        </div>
         <div id="placementStats">
             <h1>TOYRO-BOT STATS:</h1>
 

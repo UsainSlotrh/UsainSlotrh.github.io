@@ -138,19 +138,27 @@
 }
 
 #Parts {
-    text-shadow: 2px 1px 0 dimgrey;
+    text-shadow: 2px 1px 0 darkblue;
 }
 
 #Knowledge {
-    text-shadow: 2px 1px 0 darkgreen;
+    text-shadow: 2px 1px 0 Darkgreen;
 }
 
 #ToyRobots {
     text-shadow: 2px 1px 0 dodgerblue;
 }
 
+#MechaCockroach {
+    text-shadow: 2px 1px 0 dodgerblue;
+}
+
 #TeacherBots {
-    text-shadow: 2px 1px 0 crimson;
+    text-shadow: 2px 1px 0 mediumseagreen;
+}
+
+#CyborgDolphin {
+    text-shadow: 2px 1px 0 mediumseagreen;
 }
 
 /*------Skills------*/
@@ -203,6 +211,10 @@
     display: none;
 }
 
+#cyborgDolphin {
+    display: none;
+}
+
 /*------Html------*/
 body {
     background-color: lightskyblue;
@@ -236,6 +248,7 @@ h1 {
 #tabs {
     display: none;
 }
+
 #selectTab1 {
     display: inline-block;
     background-color: mediumpurple;
@@ -311,7 +324,18 @@ h1 {
     position: absolute;
     float: left;
     margin-left: 50%;
+}
 
+#placementBattle {
+    position: absolute;
+    float: left;
+    margin-left: 0;
+}
+
+#placementEnhance {
+    position: absolute;
+    float: left;
+    margin-left: 30%;
 }
 
 #placementStats {
