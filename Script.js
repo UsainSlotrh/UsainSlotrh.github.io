@@ -56,7 +56,7 @@ var microchipCost = 300;
 //Skills
 var languageCost = 20;
 var engineeringCost = 500;
-var kungfuCost = 1000;
+var kungfuCost = 2000;
 
 //ENHANCE------------------------------------------------------------
 var enhancePC = 100;
