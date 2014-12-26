@@ -8,6 +8,15 @@
     text-shadow: 0 0 3px black;
 }
 
+.border {
+    display: block;
+    float: left;
+    position: absolute;
+    margin-top: -11px;
+    margin-left: -6px;
+    z-index: -1;
+}
+
 #textbot {
     display: inline-block;
     color: white;
@@ -17,36 +26,44 @@
     background-color: mediumseagreen;
 }
 
+#collect {
+    display: block;
+}
+
+#wrenchCost {
+    display: block;
+}
+
+#enhancePower {
+    display: block;
+}
+
+#enhanceCore {
+    display: block;
+}
+
 /*------Buttons------*/
 
 .button {
-    margin-top: 5px;
-    display: block;
+    margin-top: 10px;
+    padding-top: 5px;
+    display: none;
     height: 30px;
     width: 163px;
     text-align: center;
-    color: white;
-    background-color: dodgerblue;
+    color: deeppink;
+    background-color: lightpink;
     border: 1px dashed white;
-    text-shadow: 0 0 3px black;
-    box-shadow: 0 0 4px black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white, 1px 2px dimgrey;
+    box-shadow: 0 0 0 0;
     text-decoration: none;
 }
 
 .button:hover {
     transition: 0.5s;
     cursor: pointer;
-    border: 1px solid white;
-    background-color: lightpink;
-    box-shadow: 0 0 0 0;
-}
-
-.button:hover {
-    transition: 0.5s;
-    cursor: pointer;
-    border: 1px solid white;
-    background-color: lightpink;
-    box-shadow: 0 0 0 0;
+    border: 1px solid palevioletred;
+    box-shadow: 0 0 4px black;
 }
 
 .button span {
@@ -63,6 +80,7 @@
     text-align: left;
     border: 1px solid white;
     color: white;
+    text-shadow: 0 0 3px black, 0 0 4px black;
     background-color: darkred;
 }
 
@@ -80,29 +98,51 @@
     display: none;
 }
 
+#apgCost {
+    display: none;
+}
+
+#saveload {
+    margin-left: 34%;
+}
+
 #save {
-    position: static;
+    display: block;
     float: left;
-    margin-left: 35%;
 }
 
 #load {
-    position: relative;
-    margin-left: 1%;
+    display: block;
+    margin-left: 3%;
     float: left;
 }
 
 /*------Misc------*/
 
 #title {
+    margin-top: 5px;
+    font-family: sans-serif;
+    font-size: 54px;
     margin-left: 33%;
-    font-size: 55px;
-    font-family: Arial, Helvetica, sans-serif;
 
 }
 
 .productivity {
     display: none;
+}
+
+#scanthing {
+    margin-top: -32px;
+    margin-left: 170px;
+    display: none;
+    height: 30px;
+    width: 163px;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    text-shadow: 0 0 3px black;
+    box-shadow: 0 0 4px black;
+    text-decoration: none;
 }
 
 /*------Battlescreens------*/
@@ -131,6 +171,10 @@
     position: absolute;
 }
 
+#scanEnemy {
+    display: none;
+}
+
 /*-------Resources-------*/
 .resources {
     font-size: 32px;
@@ -141,7 +185,15 @@
     text-shadow: 2px 1px 0 darkblue;
 }
 
+#Parts2 {
+    text-shadow: 2px 1px 0 darkblue;
+}
+
 #Knowledge {
+    text-shadow: 2px 1px 0 Darkgreen;
+}
+
+#Knowledge2 {
     text-shadow: 2px 1px 0 Darkgreen;
 }
 
@@ -153,6 +205,10 @@
     text-shadow: 2px 1px 0 dodgerblue;
 }
 
+#MechaMantis {
+    text-shadow: 2px 1px 0 dodgerblue;
+}
+
 #TeacherBots {
     text-shadow: 2px 1px 0 mediumseagreen;
 }
@@ -161,58 +217,8 @@
     text-shadow: 2px 1px 0 mediumseagreen;
 }
 
-/*------Skills------*/
-
-#teachLanguage {
-    display: none
-}
-
-#teachEngineering {
-    display: none
-}
-
-#teachKungFu {
-    display: none
-}
-
-/*------Shop------*/
-
-#wrenchCost {
-    display: none
-}
-
-/*------Workshop------*/
-
-#toyRobot {
-    display: none;
-}
-
-#teacherBot {
-    display: none;
-}
-
-#fixRobot {
-    display: none;
-}
-
-#fixRobot2 {
-    display: none;
-}
-
-#instJetpacks {
-    display: none;
-}
-
-#instEyeglasses {
-    display: none;
-}
-
-#mechaCockroach {
-    display: none;
-}
-
-#cyborgDolphin {
-    display: none;
+#CyborgParrot {
+    text-shadow: 2px 1px 0 mediumseagreen;
 }
 
 /*------Html------*/
@@ -335,11 +341,24 @@ h1 {
 #placementEnhance {
     position: absolute;
     float: left;
-    margin-left: 30%;
+    margin-left: 25%;
+}
+
+#placementResources2 {
+    position: absolute;
+    float: left;
+    margin-left: 45%;
 }
 
 #placementStats {
     position: absolute;
     float: left;
-    margin-left: 60%;
+    margin-left: 65%;
+}
+
+#placementStatsEnemy {
+    position: absolute;
+    float: left;
+    margin-left: 65%;
+    margin-top: 150px;
 }
