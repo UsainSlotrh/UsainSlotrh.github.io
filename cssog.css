@@ -13,7 +13,8 @@
     color: white;
     margin-top: 1%;
     border: 1px solid white;
-    background-color: black;
+    text-shadow: 0 0 3px black;
+    background-color: mediumseagreen;
 }
 
 #collect {
@@ -40,17 +41,17 @@
     height: 30px;
     width: 163px;
     text-align: center;
-    color: white;
+    color: deeppink;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white, 1px 2px dimgrey;
+    box-shadow: 0 0 0 0;
     text-decoration: none;
-    background-color: black;
-    border: solid white 1px;
+    background: lightpink url("images/Border.png");
 }
 
 .button:hover {
     transition: 0.5s;
-    color: black;
-    background-color: white;
     cursor: pointer;
+    box-shadow: 0 0 4px black;
 }
 
 .button span {
@@ -67,14 +68,14 @@
     text-align: left;
     border: 1px solid white;
     color: white;
-    background-color: black;
+    background-color: green;
+    text-shadow: 0 0 3px black, 0 0 4px black;
 }
 
 .button:active {
     transition: none;
     cursor: pointer;
-    color: white;
-    background-color: black;
+    background-color: deeppink;
 }
 
 #teach {
@@ -125,6 +126,7 @@
     display: none;
 }
 
+
 /*------Misc------*/
 
 #title {
@@ -132,7 +134,7 @@
     font-family: sans-serif;
     font-size: 54px;
     margin-left: 33%;
-    color: white;
+
 }
 
 .productivity {
@@ -157,7 +159,7 @@
 }
 
 .theme {
-    color: white;
+    color: deeppink;
 }
 
 #powers{
@@ -165,6 +167,7 @@
     position: relative;
     float: left;
 }
+
 /*------Battlescreens------*/
 #Battlescreen {
     display: none;
@@ -205,10 +208,49 @@
     display: none;
 }
 
+#Parts {
+    text-shadow: 2px 1px 0 darkblue;
+}
+
+#Parts2 {
+    text-shadow: 2px 1px 0 darkblue;
+}
+
+#Knowledge {
+    text-shadow: 2px 1px 0 Darkgreen;
+}
+
+#Knowledge2 {
+    text-shadow: 2px 1px 0 Darkgreen;
+}
+
+#ToyRobots {
+    text-shadow: 2px 1px 0 dodgerblue;
+}
+
+#MechaCockroach {
+    text-shadow: 2px 1px 0 dodgerblue;
+}
+
+#MechaMantis {
+    text-shadow: 2px 1px 0 dodgerblue;
+}
+
+#TeacherBots {
+    text-shadow: 2px 1px 0 mediumseagreen;
+}
+
+#CyborgDolphin {
+    text-shadow: 2px 1px 0 mediumseagreen;
+}
+
+#CyborgParrot {
+    text-shadow: 2px 1px 0 mediumseagreen;
+}
 
 /*------Html------*/
 body {
-    background-color: black;
+    background-color: lightskyblue;
     margin-left: 5%;
 }
 
@@ -219,6 +261,7 @@ p {
 
 h1 {
     color: white;
+    text-shadow: 1px 1px 0 dimgrey;
     display: block;
 }
 
@@ -309,5 +352,5 @@ h1 {
     float: left;
     display: block;
     width: 175px;
-    margin-right: 6px;
+    margin-right: 4px;
 }
