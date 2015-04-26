@@ -5,15 +5,22 @@
     <title>Little Mechanic</title>
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-58162096-1', 'auto');
-  ga('send', 'pageview');
+        ga('create', 'UA-58162096-1', 'auto');
+        ga('send', 'pageview');
 
-</script>
+    </script>
     <script src="Script.js"></script>
     <link rel="stylesheet" type="text/css" href="cssog.css">
 </head>
@@ -95,28 +102,96 @@
         <a href="javascript:installEyeglasses();" class="button"
            id="instEyeglasses"><span>Cost: 1000 Parts <br>Increased efficiency for Teacher Bots!<br><br>Are these...beer goggles? </span>Install
             Eyeglasses</a>
+        <a href="javascript:installMagChip();"
+           class="button"
+           id="instMagChip"><span>Cost: 100000 Parts <br>Enables TOYRO-BOT to learn new things! <br><br></span>Install Magic Chip</a>
         <a href="javascript:bonusParts();" class="button"
            id="b1"><span>Cost: 100000 Parts <br>Increases parts production speed by 200%. </span>Engergizer 1</a>
+        <a href="javascript:bonusParts2();" class="button"
+           id="b2"><span>Cost: 100000 Parts <br>Increases parts production speed by 400%. </span>Engergizer 2</a>
+        <a href="javascript:bonusParts3();" class="button"
+           id="b3"><span>Cost: 100000 Parts <br>Increases parts production speed by 800%. </span>Engergizer 3</a>
         <a href="javascript:bonusKnowledge();" class="button"
-           id="bk1"><span>Cost: 100000 Parts <br>Increases knowledge production speed by 200%. </span>Learning Spree 1</a>
+           id="bk1"><span>Cost: 100000 Parts <br>Increases knowledge production speed by 200%. </span>Learning Spree
+            1</a>
+        <a href="javascript:bonusKnowledge2();" class="button"
+           id="bk2"><span>Cost: 100000 Parts <br>Increases knowledge production speed by 400%. </span>Learning Spree
+            2</a>
+        <a href="javascript:bonusKnowledge3();" class="button"
+           id="bk3"><span>Cost: 100000 Parts <br>Increases knowledge production speed by 800%. </span>Learning Spree
+            3</a>
         <a href="javascript:improveTR();" class="button"
            id="impTR"><span>Cost: 10000 Parts <br>Better efficiency for Toy Robots!<br><br>"My sound, to multiply."</span>Improve
             Toy Robots</a>
+        <a href="javascript:improveTR2();" class="button"
+           id="impTR2"><span>Cost: 10000 Parts <br>Better efficiency for Toy Robots!</span>Improve
+            Toy Robots 2</a>
+        <a href="javascript:improveTR3();" class="button"
+           id="impTR3"><span>Cost: 10000 Parts <br>Better efficiency for Toy Robots!</span>Improve
+            Toy Robots 3</a>
+        <a href="javascript:improveTR4();" class="button"
+           id="impTR4"><span>Cost: 10000 Parts <br>Better efficiency for Toy Robots!</span>Improve
+            Toy Robots 4</a>
         <a href="javascript:improveMC();" class="button"
            id="impMC"><span>Cost: 50000 Parts <br>Better efficiency for Mecha Cockroach!<br><br>They now use make-up to look a bit more pleasant. Still eww though.</span>Improve
             Mecha Cockroach</a>
+        <a href="javascript:improveMC2();" class="button"
+           id="impMC2"><span>Cost: 50000 Parts <br>Better efficiency for Mecha Cockroach!</span>Improve
+            Mecha Cockroach 2</a>
+        <a href="javascript:improveMC3();" class="button"
+           id="impMC3"><span>Cost: 50000 Parts <br>Better efficiency for Mecha Cockroach!</span>Improve
+            Mecha Cockroach 2</a>
+        <a href="javascript:improveMC4();" class="button"
+           id="impMC4"><span>Cost: 50000 Parts <br>Better efficiency for Mecha Cockroach!</span>Improve
+            Mecha Cockroach 2</a>
         <a href="javascript:improveMM();" class="button"
            id="impMM"><span>Cost: 100000 Parts <br>Better efficiency for Mecha Mantis!<br><br>"Kawaii" will be deleted from it's dictionary.</span>Improve
             Mecha Mantis</a>
+        <a href="javascript:improveMM2();" class="button"
+           id="impMM2"><span>Cost: 100000 Parts <br>Better efficiency for Mecha Mantis!</span>Improve
+            Mecha Mantis 2</a>
+        <a href="javascript:improveMM3();" class="button"
+           id="impMM3"><span>Cost: 100000 Parts <br>Better efficiency for Mecha Mantis!</span>Improve
+            Mecha Mantis 3</a>
+        <a href="javascript:improveMM4();" class="button"
+           id="impMM4"><span>Cost: 100000 Parts <br>Better efficiency for Mecha Mantis!</span>Improve
+            Mecha Mantis 4</a>
         <a href="javascript:improveTB();" class="button"
            id="impTB"><span>Cost: 10000 Parts <br>Better efficiency for Teacher Bots!<br><br>"Cogito ergo sum."</span>Improve
             Teacher Bots</a>
+        <a href="javascript:improveTB2();" class="button"
+           id="impTB2"><span>Cost: 10000 Parts <br>Better efficiency for Teacher Bots!<br><br></span>Improve
+            Teacher Bots 2</a>
+        <a href="javascript:improveTB3();" class="button"
+           id="impTB3"><span>Cost: 10000 Parts <br>Better efficiency for Teacher Bots!<br><br></span>Improve
+            Teacher Bots 3</a>
+        <a href="javascript:improveTB4();" class="button"
+           id="impTB4"><span>Cost: 10000 Parts <br>Better efficiency for Teacher Bots!<br><br></span>Improve
+            Teacher Bots 4</a>
         <a href="javascript:improveCD();" class="button"
            id="impCD"><span>Cost: 50000 Parts <br>Better efficiency for Cyborg Dolphins!<br><br>They can now do synchronized swimming!</span>Improve
             Cyborg Dolphin</a>
+        <a href="javascript:improveCD2();" class="button"
+           id="impCD2"><span>Cost: 50000 Parts <br>Better efficiency for Cyborg Dolphins!</span>Improve
+            Cyborg Dolphin 2</a>
+        <a href="javascript:improveCD3();" class="button"
+           id="impCD3"><span>Cost: 50000 Parts <br>Better efficiency for Cyborg Dolphins!</span>Improve
+            Cyborg Dolphin 3</a>
+        <a href="javascript:improveCD4();" class="button"
+           id="impCD4"><span>Cost: 50000 Parts <br>Better efficiency for Cyborg Dolphins!</span>Improve
+            Cyborg Dolphin 4</a>
         <a href="javascript:improveCP();" class="button"
            id="impCP"><span>Cost: 100000 Parts <br>Better efficiency for Cyborg Parrots!<br><br>ALL HAIL THE ALLFATHER CRAWWWW!</span>Improve
             Cyborg Parrot</a>
+        <a href="javascript:improveCP2();" class="button"
+           id="impCP2"><span>Cost: 100000 Parts <br>Better efficiency for Cyborg Parrots!</span>Improve
+            Cyborg Parrot 2</a>
+        <a href="javascript:improveCP3();" class="button"
+           id="impCP3"><span>Cost: 100000 Parts <br>Better efficiency for Cyborg Parrots!</span>Improve
+            Cyborg Parrot 3</a>
+        <a href="javascript:improveCP4();" class="button"
+           id="impCP4"><span>Cost: 100000 Parts <br>Better efficiency for Cyborg Parrots!</span>Improve
+            Cyborg Parrot 4</a>
     </div>
 </div>
 <!--Skills toyro will learn-->
@@ -138,9 +213,6 @@
         <a href="javascript:learnScan();"
            class="button"
            id="teachScan"><span>Cost: 3000 Knowledge <br><br>Over how much...?</span>Teach Scan</a>
-        <a href="javascript:installMagChip();"
-           class="button"
-           id="instMagChip"><span>Cost: 100000 Parts <br> <br><br></span>Install Magic Chip</a>
         <a href="javascript:learnLang2();"
            class="button"
            id="teachLang2"><span>Cost: 100000 Knowledge <br>Better efficiency for Toy Robots and Teacher Bots.<br><br>Learn to finally talk to your bretheren TOYRO-BOT.</span>Teach
@@ -339,13 +411,15 @@
 
         <p id="stacks">Stacks: 1</p>
         <a href="javascript:attackThing();" class="button" id="attackthing">Attack</a>
-        <a href="javascript:overrideThing();" class="button" id="overridething">BURST!</a>
-        <a href="javascript:endThing();" class="button" id="endthing">Rest</a>
+        <a href="javascript:defendThing();" class="button" id="defendthing">Defend</a>
     </div>
+    <h1 id="battletimer"></h1>
     <div id="ENEMY">
         <p id="ENEMYNAME">Cockroach King</p>
 
         <p id="ENEMYHEALTH"></p>
+
+        <div class="invisiText" id="textbot2"></div>
     </div>
 </div>
 <div id="themes">

@@ -16,6 +16,13 @@
     background-color: black;
 }
 
+#textbot2 {
+    width: 100%;
+    color: white;
+    border: 1px solid white;
+    background-color: black;
+}
+
 #collect {
     display: block;
 }
@@ -168,7 +175,6 @@
 /*------Battlescreens------*/
 #Battlescreen {
     display: none;
-    margin-left: 36%;
 }
 
 #TOYRO {
@@ -178,9 +184,15 @@
 
 #ENEMY {
     float: left;
-    text-align: right;
+    text-align: left;
+
 }
 
+#battletimer {
+    float: left;
+    text-align: center;
+    margin-right: 1%;
+}
 
 #attack {
     position: absolute;
