@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    display: none;
+    padding-left: 5px;
+    padding-top: 5px;
+    margin: 1px;
+    border: solid 1px black;
+    height: 90px;
+    width: 200px;
+    cursor: pointer;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.button:hover {
+    transition: 0.3s;
+    border: solid 1px white;
+    background-color: black;
+    color: white;
+}
+
+.button:active {
+    border: solid 1px black;
+    background-color: white;
+    color: black;
+}
+
+#col1 {
+    display: inline-block;
+    float: left;
+}
+
+#col2 {
+    display: inline-block;
+    float: left;
+}
+
+#col3 {
+    display: inline-block;
+    float: left;
+}
+
+#col4 {
+    display: inline-block;
+    float: left;
+}
+
+#collectp {
+    display: block;
+    height: 25px;
+
+}
+
+#collectk {
+    display: none;
+    height: 25px;
+}
+
+#save {
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+#load {
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+#saveload {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+#dice {
+    display: block;
+}
+
+.dice {
+    display: inline-block;
+    border: solid 1px black;
+    font-family: fantasy;
+    font-size: larger;
+    text-align: center;
+    height: 100px;
+    width: 80px;
+}
+
+.small {
+    font-family: monospace;
+
+}
+
+#goodboy {
+    display: inline-block;
+    margin-right: 2%;
+}
+
+#badboy {
+    display: inline-block;
+}
+
+#attack {
+    display: block;
+}
+
+#sub {
+    display: none;
+}
+
+.smallbutton {
+    height: 25px;
+}
+
+.smallbutton2 {
+    height: 58px;
+}
+
+#etext {
+    display: none;
+}
+
+#ttext {
+    display: none;
+}
+
+#textbox {
+    display: none;
+    font-size: 21px;
+    margin: 5px;
+    padding-left: 80px;
+    border: solid 1px black;
+    height: 80px;
+    width: auto;
+    background-image: url("toyrobotnormal.png");
+    background-repeat: no-repeat;
+}
+
+#speedup {
+    height: 25px;
+    width: 200px;
+}
