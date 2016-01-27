@@ -1,53 +1,63 @@
 <!DOCTYPE html>
 <html lang=en>
-<head>
+  <head>
     <title>Little Mechanic</title>
     <meta charset=UTF-8>
-    <link rel=stylesheet type=text/css href=css.css>
+    <link rel=stylesheet type='text/css' href='assets/stylesheets/main.css'>
+
     <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-58162096-1', 'auto');
-        ga('send', 'pageview');
-
+      ga('create', 'UA-58162096-1', 'auto');
+      ga('send', 'pageview');
     </script>
-    <script src="core.js"></script>
-</head>
-<body>
-<div id="main">
-    <div>
-        <h1 id="p">Parts: 0</h1>
 
+    <script src='assets/javascript/main.js'></script>
+  </head>
+  <body>
+    <div id="main">
+      <div>
+        <h1 id="p">Parts: 0</h1>
         <h1 id="k">Knowledge: 0</h1>
 
         <div class="button" id="speedup">OVERDRIVE READY!</div>
         <div id="textbox"></div>
-    </div>
-    <div id="saveload">
+      </div>
+      <div id="saveload">
         <p>Little Mechanic</p>
 
         <div class="button" id="save">Save</div>
         <div class="button" id="load">Load</div>
-    </div>
-    <br>
-
-    <div id="col1">
+      </div>
+      <br>
+      <div id="col1">
         <div class="button" id="collectp">Collect Parts</div>
-        <div class="button" id="wrench">Wrench<br><br>Cost: 10 Parts<br>
-
-            <p class="small">Has a name tag on it: "Maximilian".</p></div>
+        <div class="button" id="wrench">
+          <span>Wrench</span>
+          <br>
+          <br>
+          <span>Cost: 10 Parts</span>
+          <br>
+          <p class="small">Has a name tag on it: "Maximilian".</p>
+        </div>
         <div class="button" id="tr">Toy Robot</div>
-        <div class="button" id="fix">Fix Toy Robot<br><br>Cost: 100 Parts<br></div>
+        <div class="button" id="fix">
+          <span>Fix Toy Robot</span>
+          <br>
+          <br>
+          <span>Cost: 100 Parts</span>
+          <br>
+        </div>
         <div class="button" id="mc">Mecha Cockroach</div>
         <div class="button" id="mm">Mecha Mantis</div>
         <div class="button" id="mw">Mecha Wolf</div>
@@ -57,128 +67,157 @@
         <div class="button" id="cp">Cyborg Parrot</div>
         <div class="button" id="cc">Cyborg Chimpanzee</div>
         <div class="button" id="ch">Cyborg Human</div>
-
-    </div>
-    <div id="col2">
+      </div>
+      <div id="col2">
         <div class="button" id="collectk">Collect Knowledge</div>
-        <div class="button" id="language">Language<br><br>Cost: 25 Knowledge<br>
-
-            <p class="small">Meredy, Meredy, Meredy!</p></div>
-        <div class="button" id="engineering">Engineering<br><br>Cost: 50 Knowledge<br>
-
-            <p class="small">Learn from Dr.Wily himself!</p></div>
-        <div class="button" id="jetpacks">Jetpacks<br>Improve Toy Robots<br>Cost: 250 Knowledge<br>
-
-            <p class="small">Left, Right, L1, L2, R1, R2, Up, Down, Left, Right</p></div>
-        <div class="button" id="eyeglasses">Eyeglasses<br>Improve Teacherbots<br>Cost: 250 Knowledge<br>
-
-            <p class="small">Are these...beer goggles?</p></div>
-        <div class="button" id="boxing">Boxing<br><br>Cost: 1000 Knowledge<br>
-
-            <p class="small">The time of man has come to an end.</p></div>
-        <div class="button" id="scanner">Scanner<br><br>Cost: 2500 Knowledge<br>
-
-            <p class="small">Over how much?</p></div>
-        <div class="button" id="overdrive">Overdrive<br><br>Cost: 10000 Knowledge<br>
-
-            <p class="small">Is this a bicycle?</p></div>
-    </div>
-    <div id="col3">
+        <div class="button" id="language">
+          <span>Language</span>
+          <br>
+          <br>
+          <span>Cost: 25 Knowledge</span>
+          <br>
+          <p class="small">Meredy, Meredy, Meredy!</p>
+        </div>
+        <div class="button" id="engineering">
+          <span>Engineering</span>
+          <br>
+          <br>
+          <span>Cost: 50 Knowledge</span>
+          <br>
+          <p class="small">Learn from Dr.Wily himself!</p>
+        </div>
+        <div class="button" id="jetpacks">
+          <span>Jetpacks</span>
+          <br>
+          <span>Improve Toy Robots</span>
+          <br>
+          <span>Cost: 250 Knowledge</span>
+          <br>
+          <p class="small">Left, Right, L1, L2, R1, R2, Up, Down, Left, Right</p>
+        </div>
+        <div class="button" id="eyeglasses">
+          <span>Eyeglasses</span>
+          <br>
+          <span>Improve Teacherbots</span>
+          <br>
+          <span>Cost: 250 Knowledge</span>
+          <br>
+          <p class="small">Are these...beer goggles?</p>
+        </div>
+        <div class="button" id="boxing">
+          <span>Boxing</span>
+          <br>
+          <br>
+          <span>Cost: 1000 Knowledge</span>
+          <br>
+          <p class="small">The time of man has come to an end.</p>
+        </div>
+        <div class="button" id="scanner">
+          <span>Scanner</span>
+          <br>
+          <br>
+          <span>Cost: 2500 Knowledge</span>
+          <br>
+          <p class="small">Over how much?</p>
+        </div>
+        <div class="button" id="overdrive">
+          <span>Overdrive</span>
+          <br>
+          <br>
+          <span>Cost: 10000 Knowledge</span>
+          <br>
+          <p class="small">Is this a bicycle?</p>
+        </div>
+      </div>
+      <div id="col3">
         <div class="button smallbutton" id="fight">Fight next enemy!</div>
         <div class="button smallbutton" id="scan">Scan next enemy!</div>
         <div class="button smallbutton" id="scan2">0%</div>
         <div id="etext">
-            <p id="ename">Name: ???</p>
-
-            <p id="edamage">Damage: ???</p>
-
-            <p id="ehealth">Health: ???</p>
+          <p id="ename">Name: ???</p>
+          <p id="edamage">Damage: ???</p>
+          <p id="ehealth">Health: ???</p>
         </div>
-    </div>
-    <div id="col4">
-        <div class="button smallbutton2" id="upd">Upgrade damage<br>Cost: 1000 Parts<br>Level: 1</div>
-        <div class="button smallbutton2" id="uph">Upgrade max HP<br>Cost: 1000 Parts<br>Level: 1</div>
+      </div>
+      <div id="col4">
+        <div class="button smallbutton2" id="upd">
+          <span>Upgrade damage</span>
+          <br>
+          <span>Cost: 1000 Parts</span>
+          <br>
+          <span>Level: 1</span>
+        </div>
+        <div class="button smallbutton2" id="uph">
+          <span>Upgrade max HP</span>
+          <br>
+          <span>Cost: 1000 Parts</span>
+          <br>
+          <span>Level: 1</span>
+        </div>
         <div id="ttext">
-            <p id="tname">Name: TOYRO-BOT</p>
-
-            <p id="tdamage">Damage: </p>
-
-            <p id="thealth">Health: </p>
+          <p id="tname">Name: TOYRO-BOT</p>
+          <p id="tdamage">Damage: </p>
+          <p id="thealth">Health: </p>
         </div>
+      </div>
     </div>
-</div>
-<div id="sub">
-    <h1 id="reroll">Rerolls:</h1>
-    <button id="attack">Trade damage with the enemy!</button>
-    <div id="goodboy">
+    <div id="sub">
+      <h1 id="reroll">Rerolls:</h1>
+      <button id="attack">Trade damage with the enemy!</button>
+      <div id="goodboy">
         <h1>TOYRO-BOT</h1>
-
         <h2 id="goodhp">HP:</h2>
-
         <h2 id="gooddamage">Damage to enemy:</h2>
 
         <div class="dice">
-            <h1 id="d0">0</h1>
-
-            <p>Damage</p>
-            <button id="r0">Roll dice</button>
+          <h1 id="d0">0</h1>
+          <p>Damage</p>
+          <button id="r0">Roll dice</button>
         </div>
         <div class="dice">
-            <h1 id="d1">1</h1>
-
-            <p>Damage</p>
-            <button id="r1">Roll dice</button>
+          <h1 id="d1">1</h1>
+          <p>Damage</p>
+          <button id="r1">Roll dice</button>
         </div>
         <br>
-
         <div class="dice">
-            <h1 id="d2">2</h1>
-
-            <p>Defense</p>
-            <button id="r2">Roll dice</button>
+          <h1 id="d2">2</h1>
+          <p>Defense</p>
+          <button id="r2">Roll dice</button>
         </div>
         <div class="dice">
-            <h1 id="d3">3</h1>
-
-            <p>Defense</p>
-            <button id="r3">Roll dice</button>
+          <h1 id="d3">3</h1>
+          <p>Defense</p>
+          <button id="r3">Roll dice</button>
         </div>
-    </div>
-    <div id="badboy">
+      </div>
+      <div id="badboy">
         <h1 id="enemy">ENEMY</h1>
-
         <h2 id="badhp">HP:</h2>
-
         <h2 id="baddamage">Damage to TOYRO-BOT:</h2>
 
         <div class="dice">
-            <h1 id="d4">4</h1>
-
-            <p>Damage</p>
-            <button id="r4">Roll dice</button>
+          <h1 id="d4">4</h1>
+          <p>Damage</p>
+          <button id="r4">Roll dice</button>
         </div>
         <div class="dice">
-            <h1 id="d5">5</h1>
-
-            <p>Damage</p>
-            <button id="r5">Roll dice</button>
+          <h1 id="d5">5</h1>
+          <p>Damage</p>
+          <button id="r5">Roll dice</button>
         </div>
         <br>
-
         <div class="dice">
-            <h1 id="d6">6</h1>
-
-            <p>Defense</p>
-            <button id="r6">Roll dice</button>
+          <h1 id="d6">6</h1>
+          <p>Defense</p>
+          <button id="r6">Roll dice</button>
         </div>
-
         <div class="dice">
-            <h1 id="d7">7</h1>
-
-            <p>Defense</p>
-            <button id="r7">Roll dice</button>
+          <h1 id="d7">7</h1>
+          <p>Defense</p>
+          <button id="r7">Roll dice</button>
         </div>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>
