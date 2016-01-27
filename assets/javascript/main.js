@@ -1,4 +1,4 @@
-﻿"use strict";
+"use strict";
 
 /*
  * CTRL+F the bracket code for easier use!
@@ -81,7 +81,7 @@ var dtrtext = function (text, emote) {
 
 function changeText(text) {
     document.getElementById("textbox").innerHTML = text.text;
-    document.getElementById("textbox").style.backgroundImage = "url(" + text.emote + ")";
+    document.getElementById("textbox").style.backgroundImage = 'url(assets/images/' + text.emote + ")";
 }
 
 function addrobot(robot) {
